@@ -1,0 +1,43 @@
+{
+  "categories": [
+    {
+      "categories": "cheese",
+      "id": 1
+    },
+    {
+      "name": "Cheese",
+      "display_name": "Cheddar",
+      "description": "super sharp",
+      "id": 2
+    },
+    {
+      "name": "Xbox",
+      "display_name": "Xbox One",
+      "description": "Game System",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "category": "electronics",
+      "name": "Xbox 1",
+      "display_name": "Xbox",
+      "description": "Fun stuff",
+      "id": 2
+    },
+    {
+      "category": "food",
+      "name": "burrito",
+      "display_name": "burrito",
+      "description": "Belly Full",
+      "id": 3
+    },
+    {
+      "category": "food",
+      "name": "cheeseburger",
+      "display_name": "cheeseburger",
+      "description": "Yum",
+      "id": 4
+    }
+  ]
+}
