@@ -1,19 +1,11 @@
-'use strict';
 
-// get the library from node_modules
-const jsonServer = require('json-server');
-// function that returns an object
-const server = jsonServer.create();
-// another function that returns a router object => configured with our database file
-const router = jsonServer.router('db.json');
-// creates JSON serves default middlewares
-const middlewares = jsonServer.defaults();
+const app = require('./lib/server.js');
+require('dotenv').config();
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 
-server.use(middlewares);
-server.use(router);
-// run json-server from a node js file
-server.listen(PORT, () => {
-  console.log('JSON Server is running');
+app.listen(PORT, () => {
+  console.log('Server running on port 3000');
 });
+
+
